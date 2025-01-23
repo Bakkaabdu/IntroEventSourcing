@@ -2,10 +2,10 @@
 # --
 # --
 # Event Sourcing
-# wut is event sourcing --??
+# WHAT is event sourcing --??
 Event Sourcing is a way to keep track of business actions by saving them as events Instead of just saving the current state of things it saves every change that happens This means no important data is lost Every action creates an event that is saved in a database This helps in checking past actions and understanding what happened It also makes it easier to analyze and report on business activities
 
-# wut is Event ?
+# WHAT is Event ?
 Events are facts about things that happened in the past They tell us about actions that were completed and should be named in the past like "user added" or "order confirmed" Events are not meant for one person they are shared information It is like telling a story at a party We hope someone listens but they might not pay attention
 
 ## Events have some important features
@@ -17,7 +17,7 @@ Events are facts about things that happened in the past They tell us about actio
 ### People can understand events in different ways For example the result of a basketball game is a fact Fans of the winning team will be happy while fans of the losing team will feel sad
 
 
-# wut is Steam ?
+# WHAT is Stream ?
 A stream is a way to group events together In Event Sourcing streams represent objects or entities All changes to an entity are saved as events in that stream To understand the current state of the entity you look at all the events in the stream and apply them one by one in the order they happened
 
 Each stream has a special ID that shows which specific object it belongs to Each event in the stream has its own unique position This position is usually a number that goes up with each new event This number helps keep track of the order of events when checking the state It can also help find problems when multiple changes happen at the same time
